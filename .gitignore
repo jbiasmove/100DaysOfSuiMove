@@ -128,3 +128,33 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# additions
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files (if you ever work cross-platform)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore editor-specific settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore compiled Move files (if applicable)
+*.move.lock
+
+# Ignore logs and temp files
+*.log
+logs/
+tmp/
+debug.log
+
+# Ignore local dependencies
+node_modules/
