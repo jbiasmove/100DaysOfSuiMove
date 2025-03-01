@@ -1,0 +1,32 @@
+/* src/app/globals.css */
+
+/* Tailwind's directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom theme and styles */
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global background gradient */
+html, body {
+  height: 100%;
+  background: linear-gradient(to bottom, black, #2d2d2d);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
